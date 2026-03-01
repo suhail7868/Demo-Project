@@ -2,10 +2,10 @@ from flask import Flask, render_template, request
 app=Flask(__name__)
 @app.route('/') 
 def home():
-    return "Hello World"
+    return "Hello World by suhail"
 @app.route('/new')
 def new():
-    return "This is a new page"
+    return "This is a new page of docker"
 
 
 if __name__ == '__main__':
