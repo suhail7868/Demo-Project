@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Generate version tag (timestamp)
-        run: echo "value=$(date +'%Y-%m-%d-%H%M%S')" >> $GITHUB_OUTPUT
+        run: echo "VERSION=$(date +'%Y-%m-%d-%H%M%S')" >> $GITHUB_OUTPUT
         # VERSION=2025-12-11-143025
         # Image name: 
         # mdmudsfikurrahamn/hello-world:2025-12-11-090512
